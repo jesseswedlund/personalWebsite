@@ -223,3 +223,14 @@ production server to be cluttered up with dev dependencies like
 git-tracking to be cluttered with production build files like
 `bundle.js`! By doing these steps, we make sure our development and
 production environments both stay nice and clean!
+
+NOTES
+
+* Fix whitespace in photos/videos of projects on home page
+* fix photo aspect ratio on projects page
+* make project page responsive
+* fill out captain's log for each project
+* make resume section of home page
+* be able to download resume from resume section
+* deploy sudoku solver
+* remake video for River Coach
