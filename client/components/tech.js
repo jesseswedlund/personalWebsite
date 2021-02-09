@@ -1,12 +1,26 @@
-import React, {useState} from 'react'
-// import {SelectedTech} from './index'
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import React, {useState, useEffect} from 'react'
+import sr from '../scrollReveal'
 
 const Tech = () => {
   const [logo, setLogo] = useState('react')
   const handleClick = evt => {
     setLogo(evt.target.name)
   }
+
+  useEffect(() => {
+    const config = {
+      origin: 'top',
+      duration: 2000,
+      delay: 200,
+      reset: false,
+      distance: '50px',
+      scale: 1,
+      easing: 'ease'
+    }
+
+    sr.reveal('.techBox', config)
+    sr.reveal('.ARROW', config)
+  }, [])
 
   return (
     <div className="sectionBox" id="tech">
@@ -298,7 +312,7 @@ const Tech = () => {
         </div>
       </div>
       <div className="spacerDiv" />
-      <a href="#projects">
+      <a href="#projects" className="ARROW">
         <img src="/images/scroll.png" id="scrollArrow" />
       </a>
     </div>

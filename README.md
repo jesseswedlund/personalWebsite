@@ -226,11 +226,13 @@ production environments both stay nice and clean!
 
 NOTES
 
-* Fix whitespace in photos/videos of projects on home page
-* fix photo aspect ratio on projects page
-* make project page responsive
-* fill out captain's log for each project
-* make resume section of home page
-* be able to download resume from resume section
-* deploy sudoku solver
-* remake video for River Coach
+* [x] deploy sudoku solver
+* [x] Implement Scroll Reveal
+* [ ] fill out captain's log for each project
+* [ ] make resume section of home page
+* [ ] Fix whitespace in photos/videos of projects on home page
+* [ ] fix photo aspect ratio on projects page
+* [ ] make project page responsive
+* [ ] fill out captain's log for each project
+* [ ] be able to download resume from resume section
+* [ ] remake video for River Coach

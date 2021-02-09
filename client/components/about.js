@@ -1,9 +1,25 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import sr from '../scrollReveal'
 
 const About = () => {
+  useEffect(() => {
+    const config = {
+      origin: 'top',
+      duration: 2000,
+      delay: 200,
+      reset: false,
+      distance: '50px',
+      scale: 1,
+      easing: 'ease'
+    }
+
+    sr.reveal('.aboutBox', config)
+    sr.reveal('.ARROW', config)
+  }, [])
+
   return (
-    <div id="about">
+    <div id="about" className="ABOUT">
       <div className="sectionName">Hi, I'm Jesse.</div>
       <div className="aboutBox">
         <div className="aboutPhotoBox">
@@ -46,7 +62,7 @@ const About = () => {
         </div>
       </div>
       <div className="spacerDiv" />
-      <a href="#tech">
+      <a href="#tech" className="ARROW">
         <img src="/images/scroll.png" id="scrollArrow" />
       </a>
     </div>

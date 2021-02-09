@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import {setStyle, setSelected} from '../store/navStyle'
 import {setProject} from '../store/projects'
 import project from './projectData'
+import sr from '../scrollReveal'
 
 const ProjectPage = props => {
   const handleChange = event => {
@@ -13,10 +14,22 @@ const ProjectPage = props => {
   useEffect(() => {
     props.setStyle('navBar')
     props.setSelected('projects')
+
+    const config = {
+      origin: 'top',
+      duration: 2000,
+      delay: 200,
+      reset: false,
+      distance: '50px',
+      scale: 1,
+      easing: 'ease'
+    }
+
+    sr.reveal('.PROJECTPAGE', config)
   }, [])
 
   return (
-    <div id="container">
+    <div id="container" className="PROJECTPAGE">
       <div className="padding">
         <div className="projectSelectorBox">
           <div>
@@ -25,7 +38,7 @@ const ProjectPage = props => {
               Project: {project[props.selectedProject].name}
             </h2>
           </div>
-          <div>
+          <div className="projectDropdownDiv">
             <select
               defaultValue={props.selectedProject}
               className="projectSelector"
@@ -42,6 +55,9 @@ const ProjectPage = props => {
               </option>
               <option type="text" value="sudokuSolver">
                 Sudoku Solver
+              </option>
+              <option type="text" value="pnwWildwater">
+                PNW Wildwater
               </option>
             </select>
           </div>
@@ -91,11 +107,24 @@ const ProjectPage = props => {
                 <div>Project still in development, not deployed.</div>
               )}
             </div>
+            {project[props.selectedProject].medium ? (
+              <div>
+                <div className="projectInfoTitle">Blog Post: </div>
+                <a
+                  href={project[props.selectedProject].medium}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="projectLink"
+                >
+                  Medium blog post picked up by "The Startup"
+                </a>
+              </div>
+            ) : null}
           </div>
         </div>
         <div className="captainsLogBox">
           <div className="captainsLog">
-            <h3>About this Project:</h3>
+            <h2>About this Project:</h2>
             <div>
               {project[props.selectedProject].captains}
               <ul>

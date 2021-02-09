@@ -2,12 +2,27 @@ import React, {useEffect} from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {setProject} from '../store/projects'
+import sr from '../scrollReveal'
 
 const Projects = props => {
   const handleClick = event => {
-    console.log(event.target.id)
     props.setProject(event.target.id)
   }
+
+  useEffect(() => {
+    const config = {
+      origin: 'top',
+      duration: 2000,
+      delay: 200,
+      reset: false,
+      distance: '50px',
+      scale: 1,
+      easing: 'ease'
+    }
+
+    sr.reveal('.project', config)
+    sr.reveal('.ARROW', config)
+  }, [])
 
   return (
     <div className="sectionBox" id="projects">
@@ -58,10 +73,14 @@ const Projects = props => {
             />
           </Link>
           <h4>
-            "Sudoku Solver" - a program that solves Sudokus up to level "hard".
+            "Sudoku Solver" - a web app that can solve most expert level
+            sudokus.
           </h4>
         </div>
       </div>
+      <a href="#experience" className="ARROW">
+        <img src="/images/scroll.png" id="scrollArrow" />
+      </a>
     </div>
   )
 }

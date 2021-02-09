@@ -1,8 +1,8 @@
-import React, {useEffect} from 'react'
-import {Navbar, Footer} from './components'
+import React from 'react'
+import {Navbar, Footer, Menu} from './components'
 import Routes from './routes'
 
-const App = props => {
+const App = () => {
   return (
     <div>
       <div>
@@ -10,6 +10,7 @@ const App = props => {
         <Routes />
       </div>
       <Footer />
+      <Menu />
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import {About, Tech, Projects} from './index'
+import {About, Tech, Projects, Experience} from './index'
 import {connect} from 'react-redux'
 import {setStyle} from '../store/navStyle'
 
@@ -13,6 +13,7 @@ const Home = props => {
       <About />
       <Tech />
       <Projects />
+      <Experience />
     </div>
   )
 }

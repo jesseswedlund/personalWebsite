@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com'
 import {ToastContainer, toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Emoji from './emoji'
+import sr from '../scrollReveal'
 
 const Contact = props => {
   const [name, setName] = useState('')
@@ -14,6 +15,18 @@ const Contact = props => {
   useEffect(() => {
     props.setStyle('navBar')
     props.setSelected('contact')
+
+    const config = {
+      origin: 'top',
+      duration: 2000,
+      delay: 200,
+      reset: false,
+      distance: '50px',
+      scale: 1,
+      easing: 'ease'
+    }
+
+    sr.reveal('.contactPage', config)
   }, [])
 
   const handleInputChange = evt => {

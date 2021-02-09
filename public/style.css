@@ -14,7 +14,7 @@ body {
   min-width: 280px;
 }
 
-#navBarHome {
+.navBarHome {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,7 +26,7 @@ body {
   font-weight: bolder;
 }
 
-#navBar {
+.navBar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -99,15 +99,6 @@ nav {
   justify-content: space-around;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  color: rgba(95, 81, 104, 0.5);
-}
-
 label {
   display: block;
 }
@@ -119,7 +110,6 @@ form div {
 
 footer {
   width: 100%;
-  bottom: 0;
   background-color: rgb(147, 184, 201);
   margin-top: 5em;
   display: flex;
@@ -290,6 +280,11 @@ footer > div {
 .underline {
   border-top: 2px solid black;
   width: 100px;
+}
+
+.underlineLong {
+  border-top: 2px solid black;
+  width: 150px;
 }
 
 .projectBox {
@@ -520,6 +515,8 @@ footer > div {
 }
 
 .menuLink {
+  text-decoration: none;
+  color: white;
   margin: 1em;
   margin-bottom: 1.5em;
   margin-top: 1.5em;
@@ -530,12 +527,92 @@ footer > div {
   cursor: pointer;
 }
 
+.navLinkStyle {
+  text-decoration: none;
+  color: white;
+}
+
+.navLinkStyle:hover {
+  color: rgba(95, 81, 104, 0.5);
+}
+
+.experienceBox {
+  display: flex;
+  justify-content: space-around;
+  width: 1024px;
+  padding: 3em;
+}
+
+.experienceTitleBox {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.experiencePhotoBox:hover {
+  opacity: 50%;
+}
+
+.experienceTitle {
+  margin-bottom: 0.25em;
+}
+
+.datesBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25em;
+}
+
+.experiencePhotoBox {
+  display: flex;
+  align-items: center;
+}
+
+.experiencePhoto {
+  width: 200px;
+  height: 200px;
+  border: LightGray solid 3px;
+  border-radius: 12em;
+}
+
+.photoBorder {
+  border: rgba(0, 0, 0, 0.5) solid 4px;
+}
+
+#experience {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experienceDescription {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 535px;
+  text-align: justify;
+}
+
+.experiencePhotoBoxSmall {
+  display: none;
+}
+
+.jobLink {
+  font-weight: bold;
+  color: rgb(147, 184, 201);
+}
+
+.jobLink:hover {
+  color: rgba(95, 81, 104, 0.5);
+}
+
 @media only screen and (max-width: 1150px) {
   #title {
     font-size: 1.2em;
   }
 
-  #navBar {
+  .navBar {
     height: 4em;
   }
 
@@ -545,6 +622,10 @@ footer > div {
 }
 
 @media only screen and (max-width: 1000px) {
+  .projectMedia {
+    height: 30vw;
+  }
+
   nav {
     justify-content: space-between;
   }
@@ -614,11 +695,46 @@ footer > div {
   .projectBox {
     width: 100%;
   }
+
+  .experienceBox {
+    width: 100%;
+  }
+
+  .experienceTitleBox {
+    flex-direction: column;
+  }
+
+  .experiencePhoto {
+    width: 15vw;
+    height: 15vw;
+  }
 }
 
-@media only screen and (max-width: 700px) {
-  #navBarHome {
-    background-position: -160px;
+@media only screen and (max-width: 800px) {
+  .projectMedia {
+    height: 100%;
+  }
+
+  .navBar {
+    background-size: auto;
+  }
+
+  #navLinks {
+    display: none;
+  }
+
+  #menu {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin: 1.5em;
+    top: 0;
+    right: 0;
+  }
+
+  #menu:hover {
+    filter: brightness(0.5);
   }
 
   nav {
@@ -635,6 +751,7 @@ footer > div {
     flex-direction: row;
     justify-content: left;
     margin-left: 5%;
+    margin-right: 10%;
   }
 
   #jobTitle {
@@ -645,21 +762,31 @@ footer > div {
     display: block;
   }
 
-  #navLinks {
-    display: none;
-    /* letter-spacing: 0em; */
+  .projectContent {
+    flex-direction: column;
   }
 
-  #menu {
-    position: relative;
-    display: block;
-    height: 20px;
-    width: 20px;
-    margin: 1.5em;
+  .projectVideo {
+    width: 80%;
+    height: 36vw;
+    border: solid rgb(147, 184, 201) 0.7em;
+    border-radius: 1em;
   }
 
-  #menu:hover {
-    filter: brightness(0.5);
+  .captainsLogBox {
+    margin-top: 1em;
+    flex-direction: column;
+  }
+
+  .projectInfo {
+    width: 90%;
+    margin-left: 3em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .navBarHome {
+    background-position: -160px;
   }
 
   .projectBox {
@@ -674,21 +801,6 @@ footer > div {
     flex-basis: 0;
   }
 
-  /* .selectedNavHome {
-    position: relative;
-    right: 0px;
-  }
-
-  .selectedNavProjects {
-    position: relative;
-    left: 5px;
-  }
-
-  .selectedNavContact {
-    position: relative;
-    left: 5px;
-  } */
-
   .contactBox {
     width: 75%;
   }
@@ -696,20 +808,30 @@ footer > div {
   #sendButton {
     width: 100px;
   }
+
+  .experiencePhotoBox {
+    align-items: flex-start;
+    padding-top: 2em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  nav {
-    /* flex-direction: column;
-    justify-content: center; */
-    /* height: 7.5em; */
-    min-width: 230px;
-    text-align: left;
+  .projectName {
+    margin-top: 0;
   }
 
-  #navBar {
-    background-size: 300%;
-    /* height: 7.5em; */
+  .projectSelectorBox {
+    margin-top: 0;
+  }
+
+  .projectVideo {
+    width: 100%;
+    height: 45vw;
+  }
+
+  nav {
+    min-width: 230px;
+    text-align: left;
   }
 
   #title {
@@ -890,6 +1012,63 @@ footer > div {
   #footerFollowBox {
     flex-basis: 40%;
     margin: 1em;
+  }
+
+  .experiencePhotoBoxSmall {
+    display: flex;
+    align-items: center;
+    padding-top: 1em;
+  }
+
+  .experiencePhoto {
+    min-width: 75px;
+    min-height: 75px;
+  }
+
+  .experiencePhotoBox {
+    display: none;
+  }
+
+  .experienceTitleBox {
+    flex-direction: row;
+  }
+
+  .experienceTitleBoxSmall {
+    margin-left: 2em;
+    text-align: left;
+  }
+
+  .experienceBox {
+    padding: 1em;
+  }
+
+  .projectSelectorBox {
+    flex-direction: column;
+  }
+
+  .projectDropdownDiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  .projectInfo {
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .experienceDescription {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .experienceTitleBox {
+    flex-direction: column;
+  }
+
+  .experiencePhotoBoxSmall {
+    justify-content: center;
   }
 }
 

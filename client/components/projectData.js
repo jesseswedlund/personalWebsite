@@ -2,7 +2,7 @@ const project = {
   haircutz: {
     name: 'Haircutz',
     description: 'A 2D multiplayer tower defense game',
-    tech: 'Phaser.js, Socket.IO, Node.js, Express, and Webpack',
+    tech: 'Phaser.js, .IO, Node.js, Express, and Webpack',
     role: 'Full Stack Developer',
     captains:
       'Haircutz was taken from concept to final product in just 2 weeks by a team of 4 developers. This project presented the tough challenges of writing complex game logic algorithms coupled with the need to create synchronous client-side gameplay using server-side logic and sockets. Some of my specific contributions were:',
@@ -24,7 +24,8 @@ const project = {
     tech:
       'React, Redux, Express, Sequelize, PostgreSQL, Sessions, Passport, Socket.IO, Stripe, Toast, and Nodemailer',
     role: 'Full Stack Developer',
-    captains: 'Some of my specific contributions were:',
+    captains:
+      'OEI was designed and built by a team of three in just 7 days. Some of my specific contributions were:',
     contributions: [
       'Designing the header and search bar functionality',
       'Implementing a guest checkout system using local storage',
@@ -42,33 +43,52 @@ const project = {
       'A progressive web app for connecting with whitewater paddlers',
     tech: 'React, Redux, Material UI, Node.js, and Express',
     role: 'Sole Developer',
-    captains: 'During this project I accomplished:',
+    captains:
+      'In just three days, River Coach was taken from concept to a working PWA. The project itself is still in development as the many social media features still need to be built out. During this project I:',
     contributions: [
-      'Implementing a service worker to cache important static assets for return visits to increase efficiency',
-      'Creating a web manifest and in-app prompt to install app',
-      'Utilizing functional React components using hooks and Redux thunk calls to a RESTful API that interact with a PostgreSQL database using Sequelize',
+      'Implemented a service worker to cache important static assets for return visits to increase efficiency',
+      'Created a web manifest and in-app prompt to install app',
+      'Utilized functional React components using hooks and Redux thunk calls to a RESTful API that interact with a PostgreSQL database using Sequelize',
       'Used Material UI to create an attractive user interface'
     ],
     image: '/images/riverCoach.png',
     youtube: 'https://www.youtube.com/embed/0H9AuTp1Uh0',
-    medium: '',
+    medium:
+      'https://medium.com/swlh/progressive-web-applications-what-they-are-why-theyre-hot-right-now-and-how-to-build-one-3c6c131f55d6',
     url: ''
   },
   sudokuSolver: {
     name: 'Sudoku Solver',
-    description: 'A web app that solves Sudokus up to level "hard".',
-    tech: 'JavaScript, HTML, CSS',
+    description: 'A web app that can solve most expert level sudokus.',
+    tech: 'React, JavaScript, CSS, Express, Webpack',
     role: 'Sole Developer',
     captains:
-      'In the development of the Sudoku Solver, my important learnings were:',
+      'The sudoku solver was my first ever solo project. I built it first with vanilla JavaScript, HTML, and CSS. Later, I completely refactored and modularized the program using React and Webpack, and added an express server. In the development of the Sudoku Solver, my important learnings were:',
     contributions: [
-      'Creating algorithms to emulate several sudoku strategies',
-      'Designing interactive UI with vanilla CSS for entering sudoku puzzle'
+      'Creating complex algorithms and data structures to emulate several sudoku solving strategies',
+      'Designing an interactive UI with vanilla JS, HTML, and CSS for entering sudoku puzzle',
+      'Refactoring an existing application to optimize operations and organize code'
     ],
     image: '/images/sudokuSolver.png',
     youtube: '',
     medium: '',
-    url: ''
+    url: 'https://thesudokusolver.herokuapp.com/'
+  },
+  pnwWildwater: {
+    name: 'PNW Wildwater',
+    description: 'A whitewater canoeing game built on Scratch',
+    tech: 'Scratch',
+    role: 'Sole Developer',
+    captains:
+      'PNW Wildwater was my first ever programming project. Scratch is a pseudo-coding program built by MIT to teach coding structure using building block puzzle pieces and an interactive art program to create the characters and setting for your game. In the development of the PNW Wildwater, my important learnings were:',
+    contributions: [
+      'Discovering a passion for building, creating, and coding',
+      'Learning object-oriented coding structures such as loops, conditionals, booleans, and events'
+    ],
+    image: '/images/pnwWildwater.png',
+    youtube: '',
+    medium: '',
+    url: 'https://scratch.mit.edu/projects/390382488/'
   }
 }
 

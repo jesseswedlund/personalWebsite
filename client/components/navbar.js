@@ -1,16 +1,36 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {setSelected} from '../store/navStyle'
+import sr from '../scrollReveal'
 
 const Navbar = props => {
   const [menu, setMenu] = useState(false)
 
+  useEffect(() => {
+    const config = {
+      origin: 'top',
+      duration: 2000,
+      delay: 200,
+      reset: true,
+      distance: '50px',
+      scale: 1,
+      easing: 'ease'
+    }
+
+    sr.reveal('.navBarHome', config)
+  }, [])
+
   return (
-    <div id={props.style}>
+    <div className={props.style}>
       <nav>
         <div id="title">
-          <Link id="titleLink" to="/" onClick={() => props.setSelected('home')}>
+          <Link
+            id="titleLink"
+            className="navLinkStyle"
+            to="/"
+            onClick={() => props.setSelected('home')}
+          >
             <div id="name">JESSE SWEDLUND</div>
             <div id="separator"> | </div>
             <div id="jobTitle">SOFTWARE ENGINEER</div>
@@ -18,7 +38,11 @@ const Navbar = props => {
         </div>
         <div id="navLinks">
           <div className="navLink">
-            <Link to="/" onClick={() => props.setSelected('home')}>
+            <Link
+              to="/"
+              className="navLinkStyle"
+              onClick={() => props.setSelected('home')}
+            >
               HOME
             </Link>
             {props.selected === 'home' ? (
@@ -28,7 +52,11 @@ const Navbar = props => {
             )}
           </div>
           <div className="navLink">
-            <Link to="/projects" onClick={() => props.setSelected('projects')}>
+            <Link
+              to="/projects"
+              className="navLinkStyle"
+              onClick={() => props.setSelected('projects')}
+            >
               PROJECTS
             </Link>
             {props.selected === 'projects' ? (
@@ -38,7 +66,11 @@ const Navbar = props => {
             )}
           </div>
           <div className="navLink">
-            <Link to="/contact" onClick={() => props.setSelected('contact')}>
+            <Link
+              to="/contact"
+              className="navLinkStyle"
+              onClick={() => props.setSelected('contact')}
+            >
               CONTACT
             </Link>
             {props.selected === 'contact' ? (
@@ -48,41 +80,6 @@ const Navbar = props => {
             )}
           </div>
         </div>
-        <div>
-          <img
-            src="/images/menu.png"
-            id="menu"
-            onClick={() => setMenu(!menu)}
-          />
-        </div>
-        {menu ? (
-          <div id="slide">
-            <div className="menuLinks">
-              <Link to="/" className="menuLink" onClick={() => setMenu(!menu)}>
-                HOME
-              </Link>
-              <Link
-                to="/projects"
-                className="menuLink"
-                onClick={() => setMenu(!menu)}
-              >
-                PROJECTS
-              </Link>
-              <Link
-                to="/contact"
-                className="menuLink"
-                onClick={() => setMenu(!menu)}
-              >
-                CONTACT
-              </Link>
-              <div className="menuLink" onClick={() => setMenu(!menu)}>
-                EXIT MENU
-              </div>
-            </div>
-          </div>
-        ) : (
-          <div />
-        )}
       </nav>
       {props.style === 'navBarHome' ? (
         <a href="#about">
