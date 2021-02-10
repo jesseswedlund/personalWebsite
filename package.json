@@ -2,7 +2,7 @@
   "name": "jesseswedlund",
   "version": "2.0.0",
   "description": "Jesse Swedlund personal website.",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
