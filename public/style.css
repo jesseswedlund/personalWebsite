@@ -39,6 +39,7 @@ body {
 }
 
 nav {
+  font-family: 'Noto Sans JP';
   width: 100%;
   display: flex;
   align-items: center;
@@ -50,14 +51,14 @@ nav {
   height: 5em;
 }
 
-#scrollArrowNav {
+.scrollArrowNav {
   height: 4em;
   width: 4em;
   margin-bottom: 0.5em;
   filter: brightness(500%);
 }
 
-#scrollArrow {
+.scrollArrow {
   height: 4em;
   width: 4em;
   margin-bottom: 0.5em;
@@ -65,11 +66,11 @@ nav {
   filter: contrast(100%);
 }
 
-#scrollArrowNav:hover {
+.scrollArrowNav:hover {
   filter: brightness(5000%);
 }
 
-#scrollArrow:hover {
+.scrollArrow:hover {
   filter: brightness(0%);
 }
 
@@ -239,17 +240,21 @@ footer > div {
 }
 
 #techGraphic {
-  background-image: url('images/laptop.png');
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 1;
   margin-top: 4em;
+}
+
+#laptopGraphic {
+  height: 300px;
 }
 
 #techGraphicBox {
   display: flex;
   position: relative;
-  top: 15px;
-  left: 55px;
+  bottom: 295px;
   width: 327px;
   height: 203px;
   align-items: center;
@@ -266,6 +271,7 @@ footer > div {
   border: none;
   padding: 0.5em;
   margin: 0.25em;
+  font-size: 14px;
 }
 
 .skillButton:hover {
@@ -382,8 +388,7 @@ footer > div {
 }
 
 .projectLink {
-  color: rgb(117, 147, 161);
-  text-decoration: none;
+  color: rgb(0, 135, 197);
 }
 
 .projectLink:hover {
@@ -601,7 +606,7 @@ footer > div {
 
 .jobLink {
   font-weight: bold;
-  color: rgb(147, 184, 201);
+  color: rgb(0, 135, 197);
 }
 
 .jobLink:hover {
@@ -680,14 +685,13 @@ footer > div {
     width: 80%;
   }
 
-  #techGraphic {
-    display: flex;
+  #laptopGraphic {
     margin-top: 2em;
     height: 30vw;
   }
 
   #techGraphicBox {
-    top: 5px;
+    bottom: 29vw;
     left: 0;
     width: 40vw;
     height: 20vw;
@@ -921,14 +925,9 @@ footer > div {
   }
 
   #techGraphicBox {
-    display: flex;
-    position: relative;
-    top: 15px;
-    left: 55px;
-    width: 327px;
-    height: 203px;
-    align-items: center;
-    justify-content: center;
+    bottom: 285px;
+    width: 400px;
+    height: 230px;
   }
 
   .techList {
@@ -943,15 +942,13 @@ footer > div {
   }
 
   #techGraphic {
-    display: flex;
-    height: 300px;
-    flex: 0;
+    max-height: 300px;
+    margin-top: 2em;
   }
 
-  #techGraphicBox {
-    top: 5px;
-    left: 0;
-    padding-bottom: 3em;
+  #laptopGraphic {
+    height: 300px;
+    margin-top: 0px;
   }
 
   .projectBox {
@@ -1054,6 +1051,23 @@ footer > div {
 
   .projectInfo {
     margin-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #techGraphic {
+    max-height: 240px;
+  }
+
+  #techGraphicBox {
+    bottom: 230px;
+    width: 320px;
+    height: 185px;
+  }
+
+  #laptopGraphic {
+    height: 240px;
+    margin-top: 0px;
   }
 }
 

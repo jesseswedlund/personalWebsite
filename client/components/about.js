@@ -63,7 +63,7 @@ const About = () => {
       </div>
       <div className="spacerDiv" />
       <a href="#tech" className="ARROW">
-        <img src="/images/scroll.png" id="scrollArrow" />
+        <img src="/images/scroll.png" className="scrollArrow" />
       </a>
     </div>
   )

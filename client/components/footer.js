@@ -16,13 +16,25 @@ const Footer = () => {
         <div className="footerNav">
           <h3 className="footerTitle">NAVIGATION</h3>
           <div className="footerLinkBox">
-            <Link to="/" className="footerLink">
+            <Link
+              to="/"
+              className="footerLink"
+              onClick={() => window.scrollTo(0, 0)}
+            >
               HOME
             </Link>
-            <Link to="/projects" className="footerLink">
+            <Link
+              to="/projects"
+              className="footerLink"
+              onClick={() => window.scrollTo(0, 0)}
+            >
               PROJECTS
             </Link>
-            <Link to="/contact" className="footerLink">
+            <Link
+              to="/contact"
+              className="footerLink"
+              onClick={() => window.scrollTo(0, 0)}
+            >
               CONTACT
             </Link>
           </div>

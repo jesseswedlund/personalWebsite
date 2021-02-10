@@ -79,7 +79,7 @@ const Projects = props => {
         </div>
       </div>
       <a href="#experience" className="ARROW">
-        <img src="/images/scroll.png" id="scrollArrow" />
+        <img src="/images/scroll.png" className="scrollArrow" />
       </a>
     </div>
   )
