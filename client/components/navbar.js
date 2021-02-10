@@ -1,12 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {setSelected} from '../store/navStyle'
 import sr from '../scrollReveal'
 
 const Navbar = props => {
-  const [menu, setMenu] = useState(false)
-
   useEffect(() => {
     const config = {
       origin: 'top',

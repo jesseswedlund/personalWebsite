@@ -1,10 +1,7 @@
 {
-  "name": "jesseswedlundpersonalwebsite",
+  "name": "jesseswedlund",
   "version": "2.0.0",
   "description": "Jesse Swedlund personal website.",
-  "engines": {
-    "node": "~12.11.1"
-  },
   "main": "index.js",
   "scripts": {
     "build-client": "webpack",

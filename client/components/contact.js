@@ -37,9 +37,6 @@ const Contact = props => {
       case 'email':
         setEmail(evt.target.value)
         break
-      case 'subject':
-        setSubject(evt.target.value)
-        break
       case 'message':
         setMessage(evt.target.value)
         break
