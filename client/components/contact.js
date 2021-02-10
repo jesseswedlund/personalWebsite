@@ -88,7 +88,7 @@ const Contact = props => {
             type="text"
             name="name"
             onChange={event => handleInputChange(event)}
-            placeholder="your name"
+            placeholder="Your name"
             required
             value={name}
             style={{width: '100%'}}
@@ -99,7 +99,7 @@ const Contact = props => {
             type="email"
             name="email"
             onChange={event => handleInputChange(event)}
-            placeholder="your email address"
+            placeholder="Your email address"
             required
             value={email}
             style={{width: '100%'}}
@@ -109,7 +109,7 @@ const Contact = props => {
           <textarea
             name="message"
             onChange={event => handleInputChange(event)}
-            placeholder="what would you like to chat about?"
+            placeholder="What would you like to chat about?"
             required
             value={message}
             style={{width: '100%', height: '250px'}}

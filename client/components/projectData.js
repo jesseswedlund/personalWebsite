@@ -16,7 +16,8 @@ const project = {
     image: '/images/haircutz.png',
     youtube: 'https://www.youtube.com/embed/t47zl9t8a4E',
     medium: '',
-    url: 'https://haircutz.herokuapp.com/'
+    url: 'https://haircutz.herokuapp.com/',
+    github: 'https://github.com/2009-FSA-CS-Lucians-Lightbringers/haircutzGame'
   },
   OEI: {
     name: 'Outdoor Recreation Inc.',
@@ -35,7 +36,8 @@ const project = {
     image: '/images/OEI.png',
     youtube: '',
     medium: '',
-    url: 'https://haircutz.herokuapp.com/'
+    url: 'https://outdoor-equipment-incorporated.herokuapp.com/products',
+    github: 'https://github.com/The-Shopper-Awakens/graceshopper'
   },
   riverCoach: {
     name: 'River Coach',
@@ -72,7 +74,8 @@ const project = {
     image: '/images/sudokuSolver.png',
     youtube: '',
     medium: '',
-    url: 'https://thesudokusolver.herokuapp.com/'
+    url: 'https://thesudokusolver.herokuapp.com/',
+    github: 'https://github.com/jesseswedlund/sudokuSolver'
   },
   pnwWildwater: {
     name: 'PNW Wildwater',

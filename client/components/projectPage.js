@@ -99,14 +99,27 @@ const ProjectPage = props => {
                   href={project[props.selectedProject].url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  id="projectLink"
+                  className="projectLink"
                 >
-                  {project[props.selectedProject].url}
+                  Click here to see this project in action
                 </a>
               ) : (
                 <div>Project still in development, not deployed.</div>
               )}
             </div>
+            {project[props.selectedProject].github ? (
+              <div>
+                <div className="projectInfoTitle">Github Repo: </div>
+                <a
+                  href={project[props.selectedProject].github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="projectLink"
+                >
+                  Take a look at the code here
+                </a>
+              </div>
+            ) : null}
             {project[props.selectedProject].medium ? (
               <div>
                 <div className="projectInfoTitle">Blog Post: </div>
@@ -114,7 +127,7 @@ const ProjectPage = props => {
                   href={project[props.selectedProject].medium}
                   target="_blank"
                   rel="noopener noreferrer"
-                  id="projectLink"
+                  className="projectLink"
                 >
                   Medium blog post picked up by "The Startup"
                 </a>

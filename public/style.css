@@ -381,12 +381,13 @@ footer > div {
   font-size: 1.2em;
 }
 
-#projectLink {
-  color: blue;
+.projectLink {
+  color: rgb(117, 147, 161);
+  text-decoration: none;
 }
 
-#projectLink:hover {
-  color: rgb(147, 184, 201);
+.projectLink:hover {
+  color: rgba(95, 81, 104, 0.5);
 }
 
 .captainsLogBox {
