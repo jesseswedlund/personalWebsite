@@ -1,4 +1,6 @@
 import React, {useEffect} from 'react'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faArrowCircleUp} from '@fortawesome/free-solid-svg-icons'
 import experience from './experienceData'
 import sr from '../scrollReveal'
 
@@ -15,6 +17,8 @@ const Experience = () => {
     }
 
     sr.reveal('.experienceBox', config)
+    sr.reveal('#myResume', config)
+    sr.reveal('.toTop', config)
   }, [])
 
   return (
@@ -29,7 +33,11 @@ const Experience = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={job.photo} className="experiencePhoto" />
+            <img
+              src={job.photo}
+              className="experiencePhoto"
+              alt="logo for experience"
+            />
           </a>
           <div className="experienceDescription">
             <div className="experienceTitleBox">
@@ -39,7 +47,11 @@ const Experience = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={job.photo} className="experiencePhoto" />
+                <img
+                  src={job.photo}
+                  className="experiencePhoto"
+                  alt="logo for experience"
+                />
               </a>
               <div className="experienceTitleBoxSmall">
                 <h3 className="experienceTitle">
@@ -72,10 +84,16 @@ const Experience = () => {
         className="jobLink"
         href="/Jesse Swedlund Resume.pdf"
         download="Jesse Swedlund Resume.pdf"
+        id="myResume"
       >
         Download Resume
       </a>
-      <div className="spacerDiv" />
+      <div className="spacerDivBig" />
+      <div className="toTopBox">
+        <div className="toTop" onClick={() => window.scrollTo(0, 0)}>
+          Scroll To Top <FontAwesomeIcon icon={faArrowCircleUp} />
+        </div>
+      </div>
     </div>
   )
 }

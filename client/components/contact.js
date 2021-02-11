@@ -117,6 +117,7 @@ const Contact = props => {
         </form>
         <ToastContainer />
       </div>
+      <div className="spacerDivBig" />
     </div>
   )
 }

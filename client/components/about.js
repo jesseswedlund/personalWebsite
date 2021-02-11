@@ -23,12 +23,16 @@ const About = () => {
       <div className="sectionName">Hi, I'm Jesse.</div>
       <div className="aboutBox">
         <div className="aboutPhotoBox">
-          <img src="images/jesseYuki.jpg" id="aboutPhoto" />
+          <img
+            src="images/jesseYuki.jpg"
+            id="aboutPhoto"
+            alt="Jesse with his dog"
+          />
         </div>
         <div className="aboutDescription">
           My focus is on finding creative solutions and human-centered
           approaches to creating enriching and memorable experiences for users
-          of technology. I enjoy creating intuitive user interfaces that
+          of technology. I enjoy building intuitive user interfaces that
           interact seemlessly with server side operations. With a background in
           outdoor education and documentary filmmaking, I possess strong
           communication and leadership skills. An adventurer at heart, I am
@@ -63,7 +67,11 @@ const About = () => {
       </div>
       <div className="spacerDiv" />
       <a href="#tech" className="ARROW">
-        <img src="/images/scroll.png" className="scrollArrow" />
+        <img
+          src="/images/scroll.png"
+          className="scrollArrow"
+          alt="down arrow"
+        />
       </a>
     </div>
   )

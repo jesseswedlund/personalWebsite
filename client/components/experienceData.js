@@ -58,7 +58,7 @@ const experience = [
     website: 'http://www.tyslist-themovie.com/',
     dates: 'September 2011-December 2016',
     duties: [
-      'Co-Director/Producer of award winning feature length documentary film, “Ty’s List"'
+      'Co-Director/Producer of award-winning feature-length documentary film, “Ty’s List"'
     ],
     photo: 'images/tyslist.jpg'
   },
@@ -70,7 +70,7 @@ const experience = [
     dates: 'September 2009-December 2013',
     major: 'B.S. Radio,Television, and Film; Philosophy',
     duties: [
-      'Earned a four year double major Bachelor of Science from top ten university'
+      'Earned a double major Bachelor of Science degree from a top-ten university'
     ],
     photo: 'images/NU.jpg'
   }

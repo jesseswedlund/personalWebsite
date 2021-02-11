@@ -7,7 +7,12 @@ const Menu = () => {
   return (
     <div>
       <div>
-        <img src="/images/menu.png" id="menu" onClick={() => setMenu(!menu)} />
+        <img
+          src="/images/menu.png"
+          id="menu"
+          onClick={() => setMenu(!menu)}
+          alt="Menu"
+        />
       </div>
       {menu ? (
         <div id="slide">

@@ -81,7 +81,11 @@ const Navbar = props => {
       </nav>
       {props.style === 'navBarHome' ? (
         <a href="#about">
-          <img src="/images/scroll.png" className="scrollArrowNav" />
+          <img
+            src="/images/scroll.png"
+            className="scrollArrowNav"
+            alt="down arrow"
+          />
         </a>
       ) : (
         <div />

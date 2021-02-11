@@ -76,6 +76,7 @@ const ProjectPage = props => {
               <img
                 src={project[props.selectedProject].image}
                 className="projectMedia"
+                alt="image for project"
               />
             )}
           </div>
@@ -149,6 +150,7 @@ const ProjectPage = props => {
           </div>
         </div>
       </div>
+      <div className="spacerDivBig" />
     </div>
   )
 }

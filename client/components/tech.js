@@ -318,7 +318,11 @@ const Tech = () => {
       </div>
       <div className="spacerDiv" />
       <a href="#projects" className="ARROW">
-        <img src="/images/scroll.png" className="scrollArrow" />
+        <img
+          src="/images/scroll.png"
+          className="scrollArrow"
+          alt="down arrow"
+        />
       </a>
     </div>
   )

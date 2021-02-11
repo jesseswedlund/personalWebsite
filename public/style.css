@@ -39,7 +39,7 @@ body {
 }
 
 nav {
-  font-family: 'Noto Sans JP';
+  font-family: 'Noto Sans JP', sans-serif;
   width: 100%;
   display: flex;
   align-items: center;
@@ -112,7 +112,7 @@ form div {
 footer {
   width: 100%;
   background-color: rgb(147, 184, 201);
-  margin-top: 5em;
+  margin-top: 1em;
   display: flex;
   justify-content: space-around;
 }
@@ -183,13 +183,16 @@ footer > div {
 .aboutPhotoBox {
   display: flex;
   align-items: center;
+  flex: 1;
+  padding: 3em;
+  position: relative;
+  bottom: 2em;
 }
 
 #aboutPhoto {
   max-width: 360px;
   max-height: 360px;
-  width: 20vw;
-  height: 20vw;
+  width: 100%;
   border-radius: 12em;
 }
 
@@ -202,6 +205,7 @@ footer > div {
   align-items: center;
   justify-content: space-between;
   text-align: justify;
+  flex: 2.2;
 }
 
 #socialLinks {
@@ -267,11 +271,13 @@ footer > div {
 }
 
 .skillButton {
+  font-family: 'Noto Sans JP', sans-serif;
   background-color: rgb(147, 184, 201);
-  border: none;
   padding: 0.5em;
   margin: 0.25em;
   font-size: 14px;
+  border-radius: 0.5em;
+  cursor: pointer;
 }
 
 .skillButton:hover {
@@ -295,9 +301,7 @@ footer > div {
 
 .projectBox {
   display: flex;
-  padding: 3em;
   width: 1024px;
-  flex-wrap: wrap;
 }
 
 .project {
@@ -323,7 +327,8 @@ footer > div {
 }
 
 .selectProject {
-  margin-top: 1em;
+  margin: 1em;
+  margin-bottom: 2em;
 }
 
 .projectSelectorBox {
@@ -484,11 +489,17 @@ footer > div {
   width: 100%;
 }
 
+.spacerDivBig {
+  height: 5em;
+  width: 100%;
+}
+
 #menu {
   display: none;
 }
 
 #slide {
+  font-family: 'Noto Sans JP', sans-serif;
   position: absolute;
   top: 1em;
   right: -100px;
@@ -613,6 +624,17 @@ footer > div {
   color: rgba(95, 81, 104, 0.5);
 }
 
+.toTopBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toTop {
+  padding: 1em;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1150px) {
   #title {
     font-size: 1.2em;
@@ -628,6 +650,16 @@ footer > div {
 }
 
 @media only screen and (max-width: 1000px) {
+  .aboutBox {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .aboutDescription {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
   .projectMedia {
     height: 30vw;
   }
@@ -669,13 +701,22 @@ footer > div {
     width: 100%;
   }
 
-  .aboutDescription {
-    width: 80%;
-  }
-
   #aboutPhoto {
     margin-bottom: 2em;
   }
+
+  .aboutPhotoBox {
+    padding-right: 5%;
+    padding-left: 5%;
+    position: static;
+  }
+
+  /* #aboutPhoto {
+    max-width: 360px;
+    max-height: 360px;
+    width: 100%;
+    border-radius: 12em;
+  } */
 
   .techBox {
     width: 100%;
@@ -796,14 +837,11 @@ footer > div {
 
   .projectBox {
     flex-direction: column;
-    flex-wrap: nowrap;
     align-items: center;
     height: 100%;
     padding-top: 1.5em;
-  }
-
-  .project {
-    flex-basis: 0;
+    padding-left: 3em;
+    padding-right: 3em;
   }
 
   .contactBox {
@@ -875,7 +913,6 @@ footer > div {
   }
 
   .aboutDescription {
-    display: flex;
     padding: 2em;
     padding-top: 1.5em;
     width: 100%;
@@ -892,6 +929,10 @@ footer > div {
     width: 40vw;
     height: 40vw;
     margin: 0em;
+  }
+
+  .aboutPhotoBox {
+    padding: 0em;
   }
 
   .techBox {
