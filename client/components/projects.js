@@ -7,7 +7,7 @@ import sr from '../scrollReveal'
 const Projects = props => {
   const handleClick = event => {
     props.setProject(event.target.id)
-    window.scrollTo(0, 0)
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
   }
 
   useEffect(() => {

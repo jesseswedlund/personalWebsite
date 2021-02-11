@@ -90,7 +90,10 @@ const Experience = () => {
       </a>
       <div className="spacerDivBig" />
       <div className="toTopBox">
-        <div className="toTop" onClick={() => window.scrollTo(0, 0)}>
+        <div
+          className="toTop"
+          onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}
+        >
           Scroll To Top <FontAwesomeIcon icon={faArrowCircleUp} />
         </div>
       </div>

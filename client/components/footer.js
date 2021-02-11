@@ -19,21 +19,25 @@ const Footer = () => {
             <Link
               to="/"
               className="footerLink"
-              onClick={() => window.scrollTo(0, 0)}
+              onClick={() =>
+                window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+              }
             >
               HOME
             </Link>
             <Link
               to="/projects"
               className="footerLink"
-              onClick={() => window.scrollTo(0, 0)}
+              onClick={() => ({top: 0, left: 0, behavior: 'smooth'})}
             >
               PROJECTS
             </Link>
             <Link
               to="/contact"
               className="footerLink"
-              onClick={() => window.scrollTo(0, 0)}
+              onClick={() =>
+                window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+              }
             >
               CONTACT
             </Link>
