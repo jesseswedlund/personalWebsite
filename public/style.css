@@ -249,7 +249,6 @@ footer > div {
   align-items: center;
   flex: 1;
   margin-top: 4em;
-  border: red solid 2px;
 }
 
 #laptopGraphic {
@@ -260,27 +259,20 @@ footer > div {
   background-size: cover;
   width: fit-content;
   height: 30vw;
-  border: blue solid 2px;
 }
 
 #techGraphicBox {
   display: flex;
-  /* position: relative;
-  bottom: 295px; */
-  /* width: 327px;
-  height: 203px; */
   width: 40vw;
   height: 20vw;
   max-width: 450px;
   max-height: 225px;
   align-items: center;
   justify-content: center;
-  border: orange solid 2px;
 }
 
 #techGraphicLogo {
   max-height: 80%;
-  border: green solid 2px;
 }
 
 .skillButton {

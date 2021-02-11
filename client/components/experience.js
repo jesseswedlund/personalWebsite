@@ -74,7 +74,7 @@ const Experience = () => {
               </div>
             </div>
             <ul className="experienceDuties">
-              {job.duties.map((duty, idx) => <li key={idx}>{duty}</li>)}
+              {job.duties.map((duty, idx2) => <li key={idx2}>{duty}</li>)}
             </ul>
           </div>
         </div>
