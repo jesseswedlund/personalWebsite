@@ -306,13 +306,15 @@ const Tech = () => {
           </div>
         </div>
         <div id="techGraphic">
-          <img src="/images/laptop.png" id="laptopGraphic" alt="A laptop" />
-          <div id="techGraphicBox">
-            <img
-              src={`/images/techLogos/${logo}.png`}
-              id="techGraphicLogo"
-              alt="A tech logo graphic"
-            />
+          {/* <img src="/images/laptop.png" id="laptopGraphic" alt="A laptop" /> */}
+          <div id="laptopGraphic">
+            <div id="techGraphicBox">
+              <img
+                src={`/images/techLogos/${logo}.png`}
+                id="techGraphicLogo"
+                alt="A tech logo graphic"
+              />
+            </div>
           </div>
         </div>
       </div>
