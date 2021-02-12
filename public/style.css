@@ -281,8 +281,10 @@ footer > div {
   padding: 0.5em;
   margin: 0.25em;
   font-size: 14px;
+  border: 1px solid rgb(99, 125, 138);
   border-radius: 0.5em;
   cursor: pointer;
+  box-shadow: 1px 1px;
 }
 
 .skillButton:hover {
