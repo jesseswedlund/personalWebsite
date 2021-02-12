@@ -31,7 +31,7 @@ const About = () => {
         </div>
         <div className="aboutDescription">
           My focus is on finding creative solutions and human-centered
-          approaches to creating enriching and memorable experiences for users
+          approaches to creating memorable and enriching experiences for users
           of technology. I enjoy building intuitive user interfaces that
           interact seemlessly with server side operations. With a background in
           outdoor education and documentary filmmaking, I possess strong
