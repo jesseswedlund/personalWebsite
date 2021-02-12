@@ -54,7 +54,7 @@ const project = {
       'Used Material UI to create an attractive user interface'
     ],
     image: '/images/riverCoach.png',
-    youtube: 'https://www.youtube.com/embed/0H9AuTp1Uh0',
+    youtube: 'https://www.youtube.com/embed/u6Orm3mcK54',
     medium:
       'https://medium.com/swlh/progressive-web-applications-what-they-are-why-theyre-hot-right-now-and-how-to-build-one-3c6c131f55d6',
     url: ''
