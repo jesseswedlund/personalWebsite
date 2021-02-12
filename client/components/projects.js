@@ -118,7 +118,7 @@ const Projects = props => {
             >
               Sudoku Solver
             </Link>{' '}
-            - a web app that can solve most expert level sudokus.
+            - a web app that can solve most expert level sudokus
           </h4>
         </div>
       </div>

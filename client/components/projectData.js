@@ -21,7 +21,7 @@ const project = {
   },
   OEI: {
     name: 'Outdoor Recreation Inc.',
-    description: 'REI Ecommerce site clone.',
+    description: 'REI Ecommerce site clone',
     tech:
       'React, Redux, Express, Sequelize, PostgreSQL, Sessions, Passport, Socket.IO, Stripe, Toast, and Nodemailer',
     role: 'Full Stack Developer',
@@ -61,7 +61,7 @@ const project = {
   },
   sudokuSolver: {
     name: 'Sudoku Solver',
-    description: 'A web app that can solve most expert level sudokus.',
+    description: 'A web app that can solve most expert level sudokus',
     tech: 'React, JavaScript, CSS, Express, Webpack',
     role: 'Sole Developer',
     captains:
