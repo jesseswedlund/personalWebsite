@@ -165,6 +165,15 @@ const Tech = () => {
               <button
                 type="button"
                 className="skillButton"
+                name="c"
+                onClick={handleClick}
+                onMouseOver={handleClick}
+              >
+                C
+              </button>
+              <button
+                type="button"
+                className="skillButton"
                 name="pwa"
                 onClick={handleClick}
                 onMouseOver={handleClick}
@@ -306,7 +315,6 @@ const Tech = () => {
           </div>
         </div>
         <div id="techGraphic">
-          {/* <img src="/images/laptop.png" id="laptopGraphic" alt="A laptop" /> */}
           <div id="laptopGraphic">
             <div id="techGraphicBox">
               <img
