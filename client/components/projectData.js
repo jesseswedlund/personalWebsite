@@ -2,7 +2,7 @@ const project = {
   haircutz: {
     name: 'Haircutz',
     description: 'A 2D multiplayer tower defense game',
-    tech: 'Phaser.js, .IO, Node.js, Express, and Webpack',
+    tech: 'Phaser.js, Socket.IO, Node.js, Express, and Webpack',
     role: 'Full Stack Developer',
     captains:
       'Haircutz was taken from concept to final product in just 2 weeks by a team of 4 developers. This project presented the tough challenges of writing complex game logic algorithms coupled with the need to create synchronous client-side gameplay using server-side logic and sockets. Some of my specific contributions were:',
