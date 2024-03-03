@@ -11,19 +11,18 @@ const project = {
       'Writing much of the game logic for interactive game objects',
       'Refactoring the file system with Webpack and modularization',
       'Implementing an automated opponent for one player gameplay',
-      'Deploying as a web app with Heroku'
+      'Deploying as a web app with Heroku',
     ],
     image: '/images/haircutz.png',
     youtube: 'https://www.youtube.com/embed/t47zl9t8a4E',
     medium: '',
-    url: 'https://haircutz.herokuapp.com/',
-    github: 'https://github.com/2009-FSA-CS-Lucians-Lightbringers/haircutzGame'
+    url: '',
+    github: 'https://github.com/2009-FSA-CS-Lucians-Lightbringers/haircutzGame',
   },
   OEI: {
     name: 'Outdoor Recreation Inc.',
     description: 'REI Ecommerce site clone',
-    tech:
-      'React, Redux, Express, Sequelize, PostgreSQL, Sessions, Passport, Socket.IO, Stripe, Toast, and Nodemailer',
+    tech: 'React, Redux, Express, Sequelize, PostgreSQL, Sessions, Passport, Socket.IO, Stripe, Toast, and Nodemailer',
     role: 'Full Stack Developer',
     captains:
       'OEI was designed and built by a team of three in just 7 days. Some of my specific contributions were:',
@@ -31,13 +30,13 @@ const project = {
       'Designing the header and search bar functionality',
       'Implementing a guest checkout system using local storage',
       'Creating controlled React forms to add and edit products as an Admin',
-      'Writing Redux thunks and reducers to make API calls and update state for products'
+      'Writing Redux thunks and reducers to make API calls and update state for products',
     ],
     image: '/images/OEI.png',
     youtube: '',
     medium: '',
-    url: 'https://outdoor-equipment-incorporated.herokuapp.com/products',
-    github: 'https://github.com/The-Shopper-Awakens/graceshopper'
+    url: '',
+    github: 'https://github.com/The-Shopper-Awakens/graceshopper',
   },
   riverCoach: {
     name: 'River Coach',
@@ -51,13 +50,13 @@ const project = {
       'Implemented a service worker to cache important static assets for return visits to increase efficiency',
       'Created a web manifest and in-app prompt to install app',
       'Utilized functional React components using hooks and Redux thunk calls to a RESTful API that interact with a PostgreSQL database using Sequelize',
-      'Used Material UI to create an attractive user interface'
+      'Used Material UI to create an attractive user interface',
     ],
     image: '/images/riverCoach.png',
     youtube: 'https://www.youtube.com/embed/u6Orm3mcK54',
     medium:
       'https://medium.com/swlh/progressive-web-applications-what-they-are-why-theyre-hot-right-now-and-how-to-build-one-3c6c131f55d6',
-    url: ''
+    url: '',
   },
   sudokuSolver: {
     name: 'Sudoku Solver',
@@ -69,13 +68,13 @@ const project = {
     contributions: [
       'Creating complex algorithms and data structures to emulate several sudoku solving strategies',
       'Designing an interactive UI with vanilla JS, HTML, and CSS for entering sudoku puzzle',
-      'Refactoring an existing application to optimize operations and organize code'
+      'Refactoring an existing application to optimize operations and organize code',
     ],
     image: '/images/sudokuSolver.png',
     youtube: '',
     medium: '',
-    url: 'https://thesudokusolver.herokuapp.com/',
-    github: 'https://github.com/jesseswedlund/sudokuSolver'
+    url: 'https://thesudokusolver.netlify.app/',
+    github: 'https://github.com/jesseswedlund/sudokuSolver',
   },
   pnwWildwater: {
     name: 'PNW Wildwater',
@@ -86,13 +85,13 @@ const project = {
       'PNW Wildwater was my first ever programming project. Scratch is a pseudo-coding program built by MIT to teach coding structure using building block puzzle pieces and an interactive art program to create the characters and setting for your game. In the development of the PNW Wildwater, my important learnings were:',
     contributions: [
       'Discovering a passion for building, creating, and coding',
-      'Learning object-oriented coding structures such as loops, conditionals, booleans, and events'
+      'Learning object-oriented coding structures such as loops, conditionals, booleans, and events',
     ],
     image: '/images/pnwWildwater.png',
     youtube: '',
     medium: '',
-    url: 'https://scratch.mit.edu/projects/390382488/'
-  }
+    url: 'https://scratch.mit.edu/projects/390382488/',
+  },
 }
 
 export default project
