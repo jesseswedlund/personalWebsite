@@ -5,8 +5,8 @@ import {setProject} from '../store/projects'
 import project from './projectData'
 import sr from '../scrollReveal'
 
-const ProjectPage = props => {
-  const handleChange = event => {
+const ProjectPage = (props) => {
+  const handleChange = (event) => {
     let selectedProject = event.target.value
     props.setProject(selectedProject)
   }
@@ -22,7 +22,7 @@ const ProjectPage = props => {
       reset: false,
       distance: '50px',
       scale: 1,
-      easing: 'ease'
+      easing: 'ease',
     }
 
     sr.reveal('.PROJECTPAGE', config)
@@ -42,8 +42,14 @@ const ProjectPage = props => {
             <select
               defaultValue={props.selectedProject}
               className="projectSelector"
-              onChange={event => handleChange(event)}
+              onChange={(event) => handleChange(event)}
             >
+              <option type="text" value="sudokuSolver">
+                Sudoku Solver
+              </option>
+              <option type="text" value="pnwWildwater">
+                PNW Wildwater
+              </option>
               <option type="text" value="haircutz">
                 Haircutz
               </option>
@@ -52,12 +58,6 @@ const ProjectPage = props => {
               </option>
               <option type="text" value="riverCoach">
                 River Coach
-              </option>
-              <option type="text" value="sudokuSolver">
-                Sudoku Solver
-              </option>
-              <option type="text" value="pnwWildwater">
-                PNW Wildwater
               </option>
             </select>
           </div>
@@ -93,9 +93,9 @@ const ProjectPage = props => {
               <div className="projectInfoTitle">My Role: </div>
               <div> {project[props.selectedProject].role}</div>
             </div>
-            <div>
-              <div className="projectInfoTitle">Deployed Product: </div>
-              {project[props.selectedProject].url.length ? (
+            {project[props.selectedProject].url && (
+              <div>
+                <div className="projectInfoTitle">Deployed Product: </div>
                 <a
                   href={project[props.selectedProject].url}
                   target="_blank"
@@ -104,10 +104,8 @@ const ProjectPage = props => {
                 >
                   Click here to see this project in action
                 </a>
-              ) : (
-                <div>Project still in development, not deployed.</div>
-              )}
-            </div>
+              </div>
+            )}
             {project[props.selectedProject].github ? (
               <div>
                 <div className="projectInfoTitle">Github Repo: </div>
@@ -143,7 +141,9 @@ const ProjectPage = props => {
               {project[props.selectedProject].captains}
               <ul>
                 {project[props.selectedProject].contributions.map(
-                  (contribution, idx) => <li key={idx}>{contribution}</li>
+                  (contribution, idx) => (
+                    <li key={idx}>{contribution}</li>
+                  ),
                 )}
               </ul>
             </div>
@@ -155,14 +155,14 @@ const ProjectPage = props => {
   )
 }
 
-const mapStateToProps = state => ({
-  selectedProject: state.projects
+const mapStateToProps = (state) => ({
+  selectedProject: state.projects,
 })
 
-const mapDispatchToProps = dispatch => ({
-  setStyle: style => dispatch(setStyle(style)),
-  setSelected: selected => dispatch(setSelected(selected)),
-  setProject: proj => dispatch(setProject(proj))
+const mapDispatchToProps = (dispatch) => ({
+  setStyle: (style) => dispatch(setStyle(style)),
+  setSelected: (selected) => dispatch(setSelected(selected)),
+  setProject: (proj) => dispatch(setProject(proj)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectPage)
