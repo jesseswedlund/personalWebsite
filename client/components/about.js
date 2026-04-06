@@ -11,7 +11,7 @@ const About = () => {
       reset: false,
       distance: '50px',
       scale: 1,
-      easing: 'ease'
+      easing: 'ease',
     }
 
     sr.reveal('.aboutBox', config)
@@ -30,13 +30,16 @@ const About = () => {
           />
         </div>
         <div className="aboutDescription">
-          My focus is on finding creative solutions and human-centered
-          approaches to creating memorable and enriching experiences for users
-          of technology. I enjoy building intuitive user interfaces that
-          interact seemlessly with server side operations. With a background in
-          outdoor education and documentary filmmaking, I possess strong
-          communication and leadership skills. An adventurer at heart, I am
-          always scanning the horizon for my next inspiration.
+          I'm a senior full-stack engineer with deep backend and systems
+          expertise, currently at Carbon Direct where I own the carbon credit
+          inventory management platform. I specialize in building AI-native
+          tooling — leveraging the Anthropic API, Claude Code, and MCP to create
+          systems that make engineering teams faster and more capable. I care
+          about technical ownership, clear communication across engineering and
+          the business, and writing software that lasts. With a background in
+          outdoor education and documentary filmmaking, I bring strong people
+          skills and a creative approach to every problem. When I'm not coding,
+          I'm usually on a river, a mountain, or a bike.
           <div id="socialLinks">
             <a
               href="https://www.linkedin.com/in/jesseswedlund/"

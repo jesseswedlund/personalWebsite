@@ -3,7 +3,7 @@ import sr from '../scrollReveal'
 
 const Tech = () => {
   const [logo, setLogo] = useState('react')
-  const handleClick = evt => {
+  const handleClick = (evt) => {
     setLogo(evt.target.name)
   }
 
@@ -15,7 +15,7 @@ const Tech = () => {
       reset: false,
       distance: '50px',
       scale: 1,
-      easing: 'ease'
+      easing: 'ease',
     }
 
     sr.reveal('.techBox', config)
@@ -31,6 +31,15 @@ const Tech = () => {
           <div className="skillsList">
             <h3>Proficient: </h3>
             <div className="techList">
+              <button
+                type="button"
+                className="skillButton"
+                name="typescript"
+                onMouseOver={handleClick}
+                onClick={handleClick}
+              >
+                TypeScript
+              </button>
               <button
                 type="button"
                 className="skillButton"
@@ -61,20 +70,20 @@ const Tech = () => {
               <button
                 type="button"
                 className="skillButton"
-                name="redux"
+                name="nextjs"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                Redux
+                Next.js
               </button>
               <button
                 type="button"
                 className="skillButton"
-                name="express"
+                name="nestjs"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                Express
+                NestJS
               </button>
               <button
                 type="button"
@@ -88,15 +97,6 @@ const Tech = () => {
               <button
                 type="button"
                 className="skillButton"
-                name="restful"
-                onClick={handleClick}
-                onMouseOver={handleClick}
-              >
-                RESTFul APIs
-              </button>
-              <button
-                type="button"
-                className="skillButton"
                 name="postgresql"
                 onClick={handleClick}
                 onMouseOver={handleClick}
@@ -106,20 +106,11 @@ const Tech = () => {
               <button
                 type="button"
                 className="skillButton"
-                name="phaser"
+                name="restful"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                Phaser.js
-              </button>
-              <button
-                type="button"
-                className="skillButton"
-                name="socketIO"
-                onClick={handleClick}
-                onMouseOver={handleClick}
-              >
-                Socket.IO
+                RESTful APIs
               </button>
               <button
                 type="button"
@@ -133,29 +124,74 @@ const Tech = () => {
               <button
                 type="button"
                 className="skillButton"
-                name="html"
+                name="githubactions"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                HTML5{' '}
+                GitHub Actions
               </button>
               <button
                 type="button"
                 className="skillButton"
-                name="git"
+                name="terraform"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                Git
+                Terraform
               </button>
               <button
                 type="button"
                 className="skillButton"
-                name="github"
+                name="anthropic"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                Github
+                Anthropic API
+              </button>
+              <button
+                type="button"
+                className="skillButton"
+                name="claudecode"
+                onClick={handleClick}
+                onMouseOver={handleClick}
+              >
+                Claude Code
+              </button>
+              <button
+                type="button"
+                className="skillButton"
+                name="cursor"
+                onClick={handleClick}
+                onMouseOver={handleClick}
+              >
+                Cursor
+              </button>
+              <button
+                type="button"
+                className="skillButton"
+                name="promptengineering"
+                onClick={handleClick}
+                onMouseOver={handleClick}
+              >
+                Prompt Engineering
+              </button>
+              <button
+                type="button"
+                className="skillButton"
+                name="mcp"
+                onClick={handleClick}
+                onMouseOver={handleClick}
+              >
+                MCP
+              </button>
+              <button
+                type="button"
+                className="skillButton"
+                name="auth0"
+                onClick={handleClick}
+                onMouseOver={handleClick}
+              >
+                Auth0
               </button>
             </div>
           </div>
@@ -165,151 +201,65 @@ const Tech = () => {
               <button
                 type="button"
                 className="skillButton"
-                name="c"
+                name="aws"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                C
+                AWS
               </button>
               <button
                 type="button"
                 className="skillButton"
-                name="pwa"
+                name="gcp"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                PWA
+                GCP
               </button>
               <button
                 type="button"
                 className="skillButton"
-                name="heroku"
+                name="azure"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                Heroku
+                Azure
               </button>
               <button
                 type="button"
                 className="skillButton"
-                name="webpack"
+                name="python"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                Webpack
+                Python
               </button>
               <button
                 type="button"
                 className="skillButton"
-                name="session"
+                name="mailchimp"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                Express-Session
+                Mailchimp API
               </button>
               <button
                 type="button"
                 className="skillButton"
-                name="postico"
+                name="datadog"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                Postico
+                DataDog
               </button>
               <button
                 type="button"
                 className="skillButton"
-                name="sql"
+                name="logrocket"
                 onClick={handleClick}
                 onMouseOver={handleClick}
               >
-                SQL
-              </button>
-            </div>
-          </div>
-          <div className="skillsList">
-            <h3>Some Familiarity: </h3>
-            <div className="techList">
-              <button
-                type="button"
-                className="skillButton"
-                name="materialUI"
-                onClick={handleClick}
-                onMouseOver={handleClick}
-              >
-                Material UI
-              </button>
-              <button
-                type="button"
-                className="skillButton"
-                name="passport"
-                onClick={handleClick}
-                onMouseOver={handleClick}
-              >
-                Passport
-              </button>
-              <button
-                type="button"
-                className="skillButton"
-                name="oAuth"
-                onClick={handleClick}
-                onMouseOver={handleClick}
-              >
-                OAuth
-              </button>
-              <button
-                type="button"
-                className="skillButton"
-                name="travis"
-                onClick={handleClick}
-                onMouseOver={handleClick}
-              >
-                Travis CI
-              </button>
-              <button
-                type="button"
-                className="skillButton"
-                name="toastify"
-                onClick={handleClick}
-                onMouseOver={handleClick}
-              >
-                Toastify
-              </button>
-              <button
-                type="button"
-                className="skillButton"
-                name="nodemailer"
-                onClick={handleClick}
-                onMouseOver={handleClick}
-              >
-                Nodemailer
-              </button>
-              <button
-                type="button"
-                className="skillButton"
-                name="mocha"
-                onClick={handleClick}
-                onMouseOver={handleClick}
-              >
-                Mocha
-              </button>
-              <button
-                type="button"
-                className="skillButton"
-                name="chai"
-                onClick={handleClick}
-                onMouseOver={handleClick}
-              >
-                Chai
-              </button>
-              <button
-                type="button"
-                className="skillButton"
-                name="testem"
-                onClick={handleClick}
-                onMouseOver={handleClick}
-              >
-                Testem
+                LogRocket
               </button>
             </div>
           </div>

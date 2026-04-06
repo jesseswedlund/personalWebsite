@@ -1,4 +1,79 @@
 const project = {
+  prReviewBot: {
+    name: 'PR Review Bot',
+    description: 'An AI-powered GitHub Action for automated code review',
+    tech: 'Python, GitHub Actions, Anthropic API, Slack API',
+    role: 'Sole Developer',
+    captains:
+      'Built as a personal project to bring AI-assisted code review into the GitHub PR workflow.',
+    contributions: [
+      'Built a GitHub Action triggered on PR review requests that calls the Anthropic API to perform AI-assisted code review in a pending state for human approval before finalizing',
+      'Extracted thousands of historical PR comments from production repos using Python + Claude to synthesize a personal review "personality" JSON, fed into each review prompt to replicate real feedback',
+      'Extended the system for team-wide use by supporting per-user personality files; integrated Slack bot notifications to alert on completed reviews',
+    ],
+    image: '/images/prReviewBot.png',
+    youtube: '',
+    medium: '',
+    url: '',
+    github: '',
+  },
+  inventoryMCP: {
+    name: 'Inventory Management MCP',
+    description:
+      'An MCP server exposing Inventory Management APIs to LLM clients via natural language',
+    tech: 'TypeScript, MCP, Auth0, Anthropic API',
+    role: 'Sole Developer',
+    captains:
+      'Designed and built at Carbon Direct to make the Inventory Management system accessible to AI agents.',
+    contributions: [
+      "Designed and implemented a Model Context Protocol (MCP) server exposing the Inventory Management system's APIs to LLM clients via natural language",
+      'Integrated Auth0 authentication using the existing company auth flow and permission-tiered access',
+    ],
+    image: '/images/inventoryMCP.png',
+    youtube: '',
+    medium: '',
+    url: '',
+    github: '',
+  },
+  aiDataRoom: {
+    name: 'AI Data Room Completeness Tool',
+    description:
+      'A prototype that parses PDF documents against structured data requirements and surfaces gaps with document highlighting',
+    tech: 'Python, Anthropic API, PDF parsing, LangGraph',
+    role: 'Contributing Engineer',
+    captains:
+      'Built during a Carbon Direct hackathon to automate project diligence data validation. The system uses a "fan-out" architecture to parallelize LLM analysis across every combination of document page and data requirement, then aggregates the results into a structured completeness report.',
+    contributions: [
+      'Chunked input PDFs into individual pages and fanned out LLM requests across every page-requirement combination in parallel, dramatically reducing processing time',
+      'Each node in the graph makes a targeted LLM call to evaluate whether a single requirement is satisfied by a single page, with cited evidence and location data',
+      'Fan-out nodes converge into an aggregation step that produces a complete readout of which requirements are met, which are missing, and exactly where the evidence lives in the document',
+      'Integrated document highlighting in a PDF viewer so users can see cited evidence in context',
+      "Built a UI that surfaces a clear completeness summary with green/missing status per requirement so diligence teams can instantly see what's there and what's not",
+    ],
+    image: '/images/aiDataRoom.png',
+    youtube: '',
+    medium: '',
+    url: '',
+    github: '',
+  },
+  emailSystem: {
+    name: 'Transactional Email System',
+    description:
+      'A Mailchimp-integrated transactional email system with automated tests and monitoring',
+    tech: 'TypeScript, Node.js, Mailchimp API, NestJS',
+    role: 'Feature Lead',
+    captains:
+      'Designed and delivered end-to-end at Carbon Direct. The architecture proved durable enough to generate new business value more than a year after initial delivery.',
+    contributions: [
+      'Designed and implemented a Mailchimp-integrated email system end-to-end, including automated tests and monitoring',
+      'System architecture proved durable and generated new use cases and business value more than a year after initial delivery',
+    ],
+    image: '/images/emailSystem.png',
+    youtube: '',
+    medium: '',
+    url: '',
+    github: '',
+  },
   haircutz: {
     name: 'Haircutz',
     description: 'A 2D multiplayer tower defense game',

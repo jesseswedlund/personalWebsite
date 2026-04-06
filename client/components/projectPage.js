@@ -44,11 +44,17 @@ const ProjectPage = (props) => {
               className="projectSelector"
               onChange={(event) => handleChange(event)}
             >
-              <option type="text" value="sudokuSolver">
-                Sudoku Solver
+              <option type="text" value="prReviewBot">
+                PR Review Bot
               </option>
-              <option type="text" value="pnwWildwater">
-                PNW Wildwater
+              <option type="text" value="inventoryMCP">
+                Inventory Management MCP
+              </option>
+              <option type="text" value="aiDataRoom">
+                AI Data Room Completeness Tool
+              </option>
+              <option type="text" value="emailSystem">
+                Transactional Email System
               </option>
               <option type="text" value="haircutz">
                 Haircutz
@@ -58,6 +64,12 @@ const ProjectPage = (props) => {
               </option>
               <option type="text" value="riverCoach">
                 River Coach
+              </option>
+              <option type="text" value="sudokuSolver">
+                Sudoku Solver
+              </option>
+              <option type="text" value="pnwWildwater">
+                PNW Wildwater
               </option>
             </select>
           </div>

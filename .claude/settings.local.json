@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(du:*)",
+      "Bash(file /Users/jesse/Desktop/Fullstack-Academy/Projects/personalWebsite/public/images/techLogos/*.png)"
+    ]
+  }
+}
