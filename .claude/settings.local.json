@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(du:*)",
-      "Bash(file /Users/jesse/Desktop/Fullstack-Academy/Projects/personalWebsite/public/images/techLogos/*.png)"
+      "Bash(file /Users/jesse/Desktop/Fullstack-Academy/Projects/personalWebsite/public/images/techLogos/*.png)",
+      "Bash(python3 -c ':*)",
+      "Bash(sips -g all anthropic.png)",
+      "Bash(convert --version)"
     ]
   }
 }
